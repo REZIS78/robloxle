@@ -52,7 +52,7 @@ useHead ({
     script: [
         {
             async: true,
-            src: 'G-HTQXMQY8K4https://www.googletagmanager.com/gtag/js?id=G-HTQXMQY8K4',
+            src: 'https://www.googletagmanager.com/gtag/js?id=G-HTQXMQY8K4',
         },
         {
           innerHTML: `
