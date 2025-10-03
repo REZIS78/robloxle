@@ -44,31 +44,31 @@
     </footer>
 </template>
 
-<script setup lang="ts">
+<script setup>
+
 import { useHead } from '#app';
 import {ref} from 'vue'
 
-useHead ({
+useHead({
     script: [
         {
             async: true,
-            src: 'https://www.googletagmanager.com/gtag/js?id=G-HTQXMQY8K4',
+            src: 'https://www.googletagmanager.com/gtag/js?id=G-HTQXMQY8K4', 
         },
         {
-          innerHTML: `
-          window.datalayer = window.datalayer || [];
-          function gtag(){data.layer.push(arguments);}
-          gtag('js', new date());
-          gtag('config', 'G-HTQXMQY8K4');
-          `,
-          type: 'text/javascript',
+            innerHTML: `
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'G-HTQXMQY8K4'); // ваш ID
+            `,
+            type: 'text/javascript',
         },
     ],
     _dangerouslyDisableSanitizersByTagID: {
         gtag: ['innerHTML'],
     },
 });
-
 
 const burger= ref<boolean>(false)
 const submenu= ref<boolean>(false)
