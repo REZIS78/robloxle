@@ -52,14 +52,14 @@ useHead ({
     script: [
         {
             async: true,
-            src: '@@@',
+            src: 'G-HTQXMQY8K4https://www.googletagmanager.com/gtag/js?id=G-HTQXMQY8K4',
         },
         {
           innerHTML: `
           window.datalayer = window.datalayer || [];
           function gtag(){data.layer.push(arguments);}
           gtag('js', new date());
-          gtag('config', '@@@');
+          gtag('config', 'G-HTQXMQY8K4');
           `,
           type: 'text/javascript',
         },
